@@ -1,23 +1,58 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-    <title>If-Then</title>
-
+    <title>Lõputööde andmebaas</title>
+    <link rel="stylesheet" href="assets/components/bootstrap-3.3.1/css/bootstrap.css">
+    <script src="assets/js/jquery-2.1.3.js" type="text/javascript"></script>
+    <script src="assets/js/myScript.js" type="text/javascript"></script>
 </head>
-
 <body>
 
-<?php
+<?php require_once "system/database.php"; ?>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.php">Lõputööde andmebaas</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="clickable <=? 'index.php' ? 'active'  : '' ?>"><a href="index.php">Kodu</a></li>
+                <li><a href="#lõputööd">Lõputööd</a></li>
+                <li><a href="#kalender">Kalender</a></li>
+                <li><a href="#logi_sisse">Logi sisse</a></li>
+            </ul>
+            <!--            <ul class="nav navbar-nav navbar-right">-->
+            <!--                <li><a href="#">Default</a></li>-->
+            <!--                <li><a href="#">Static top</a></li>-->
+            <!--                <li class="active"><a href="#">Fixed top <span class="sr-only">(current)</span></a></li>-->
+            <!--            </ul>-->
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+<br>
+<br>
+<br>
 
-$number = 1;
+<h1>Siia tuleb sisu</h1>
 
-$name = "Tarmo";
+<h1>Siia tuleb sisu</h1>
 
-echo "<h2>", "Hello ", $name, "</h2>";
+<h1>Siia tuleb sisu</h1>
 
-?>
+<h1>Siia tuleb sisu</h1>
 
+<br>
+<br>
+<!--<a href="javascript: history.back()">Back</a>-->
 </body>
-
 </html>
