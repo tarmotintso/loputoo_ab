@@ -3,14 +3,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Lõputööde andmebaas</title>
     <link rel="stylesheet" href="assets/components/bootstrap-3.3.1/css/bootstrap.css">
     <script src="assets/js/jquery-2.1.3.js" type="text/javascript"></script>
     <script src="assets/js/myScript.js" type="text/javascript"></script>
+    <?php require "system/db_controller.php"; ?>
 </head>
-<body>
 
-<?php require_once "system/database.php"; ?>
+<body>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -42,10 +43,8 @@
 <br>
 <br>
 <br>
-
 <form class="form-horizontal">
     <table class="table table-bordered">
-        <caption>Bordered Table Layout</caption>
         <thead>
         <tr class="active">
             <th>Pealkiri</th>
@@ -55,16 +54,21 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Test</td>
-            <td>Test</td>
-            <td>Test</td>
-            <td>Test</td>
-        </tr>
+
+        <?
+        if (!empty($posts)) foreach ($posts as $post):?>
+            <tr>
+            <td><?= $post["pealkiri"]; ?></td>
+            <td><?= $post["tyyp"]; ?></td>
+            <td><?= ucfirst($post["k_eesnimi"]) . " " . ucfirst($post["k_perenimi"]); ?></td>
+            <td><?= ucfirst($post["j_eesnimi"]) . " " . ucfirst($post["j_perenimi"]); ?></td>
+            </tr>
+        <? endforeach ?>
+
+
         </tbody>
     </table>
 </form>
-
 <br>
 <br>
 <!--<a href="javascript: history.back()">Back</a>-->

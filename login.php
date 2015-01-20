@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/components/bootstrap-3.3.1/css/bootstrap.css">
     <script src="assets/js/jquery-2.1.3.js" type="text/javascript"></script>
     <script src="assets/js/myScript.js" type="text/javascript"></script>
+    <?php require "system/db_controller.php"; ?>
 </head>
 <body>
 

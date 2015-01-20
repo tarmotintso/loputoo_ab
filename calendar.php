@@ -10,7 +10,7 @@
     <script src="assets/js/myScript.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="assets/components/bootstrap-3.3.1/js/calendar.js"></script>
-
+    <?php require "system/db_controller.php"; ?>
 </head>
 <body>
 
