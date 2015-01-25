@@ -45,7 +45,7 @@
 <form method="post" class="form-horizontal">
     <fieldset>
         <div class="form-group">
-            <label for="tasks" class="col-sm-2 control-label">Pealkiri</label>
+            <label for="tasks" class="col-sm-2 control-label">Pealkiri*</label>
 
             <div class="col-sm-4">
                 <input type="task_pealkiri" class="form-control" name="task_pealkiri" placeholder="dokumendi pealkiri">
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="tasks" class="col-sm-2 control-label">Juhendaja eesnimi</label>
+            <label for="tasks" class="col-sm-2 control-label">Juhendaja eesnimi*</label>
 
             <div class="col-sm-4">
                 <input type="task_juhendaja" class="form-control" name="task_juh_eesnimi"
@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="tasks" class="col-sm-2 control-label">Juhendaja perekonnanimi</label>
+            <label for="tasks" class="col-sm-2 control-label">Juhendaja perekonnanimi*</label>
 
             <div class="col-sm-4">
                 <input type="task_juhendaja" class="form-control" name="task_juh_perenimi"
@@ -80,11 +80,12 @@
             <div class="col-sm-offset-2 col-sm-10">
                 <div class="col-sm-4">
                     <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
-                        <input type="file" name="task_file">
-
+                        <!--                        <label for="exampleInputFile">File input</label>-->
+                        <!--                        <input type="file" name="task_file">-->
                         <p class="help-block">* Kohustuslikud väljad</p>
-                        <button class="btn btn-sml btn-primary" style="margin: 1px" type="submit">Sisesta</button>
+                        <button class="btn btn-sml btn-primary" style="margin: 1px" type="submit" name="submit"
+                                value="submit">Sisesta
+                        </button>
                     </div>
 
                 </div>
